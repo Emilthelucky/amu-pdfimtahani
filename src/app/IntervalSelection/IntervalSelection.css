@@ -1,0 +1,102 @@
+.interval-selection {
+    padding: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.exam-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    flex: 1 1 150px;
+}
+
+.value {
+    color: #666;
+    flex: 1 1 150px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-top: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.loading {
+    font-size: 16px;
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .interval-selection {
+        padding: 40px;
+        margin: 20px;
+
+    }
+
+    .label,
+    .value {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="number"] {
+        width: 50px;
+        margin: 0 5px 5px 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

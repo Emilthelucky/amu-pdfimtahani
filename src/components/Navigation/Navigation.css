@@ -1,0 +1,29 @@
+.navigation-container{
+    width: var(--max-width);
+    height: 70px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.image-container{
+    color: var(--white);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+}
+
+ul > li{
+    color: var(--white);
+    list-style: none;
+    font-size: 20px;
+}

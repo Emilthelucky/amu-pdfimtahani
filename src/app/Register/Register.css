@@ -1,0 +1,108 @@
+.register {
+    padding: 20px;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.username-container,
+.email-container,
+.password-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.l-username,
+.l-email,
+.l-password {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.register-username,
+.register-email,
+.register-password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-register {
+    padding: 10px;
+    width: 100%;
+    margin: 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-register:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .register {
+        padding: 10px;
+        padding-top: 30px;
+        margin: 20px;
+        margin-top: 100px;
+    }
+
+    .register-title {
+        font-size: 20px;
+    }
+
+    .register-username,
+    .register-email,
+    .register-password {
+        font-size: 14px;
+    }
+
+    .button-register {
+        font-size: 14px;
+    }
+}

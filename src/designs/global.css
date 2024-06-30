@@ -1,0 +1,30 @@
+:root{
+    --max-width: 1536px;
+    --red: red;
+    --green: green;
+    --black: black;
+    --white: white;
+    --s-mobile: 360px;
+    --l-mobile: 480px;
+    --tablet: 768px;
+    --full: 1200px;
+    --container-margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
