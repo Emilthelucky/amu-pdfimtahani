@@ -4,6 +4,7 @@ import { UserContext } from '../../context/userContext'
 import './Login.css'
 import { Spinner } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+const apiUrl = import.meta.env.VITE_API_URL
 
 export const Login = () => {
     const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ export const Login = () => {
     const handleSubmit = async () => {
         try {
             setLoading(true)
-            const response = await axios.post(`api/user/login`, formData)
+            const response = await axios.post(`${apiUrl}/user/login`, formData)
             const data = response.data.data
             const token = data.token
             const user = data.user

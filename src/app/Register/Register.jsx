@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom' // React Router v6 için
 import './Register.css'
 import { Spinner } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+const apiUrl = import.meta.env.VITE_API_URL
 
 export const Register = () => {
     const [successMessage, setSuccessMessage] = useState(null)
@@ -24,7 +25,10 @@ export const Register = () => {
     const handleSubmit = async () => {
         try {
             setLoading(true)
-            const response = await axios.post(`api/user/register`, formData)
+            const response = await axios.post(
+                `${apiUrl}/user/register`,
+                formData
+            )
             console.log(response.data)
             setSuccessMessage(
                 response.data.data.message +
