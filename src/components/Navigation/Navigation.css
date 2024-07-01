@@ -1,4 +1,5 @@
-.navigation-container{
+/* Base styles */
+.navigation-container {
     width: var(--max-width);
     height: 70px;
     background: var(--black);
@@ -11,19 +12,47 @@
     padding-right: 30px;
 }
 
-.image-container{
+.qeyd {
+    color: white;
+    font-size: 12px;
+}
+
+.image-container {
     color: var(--white);
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 250px;
 }
 
-ul > li{
+ul>li {
     color: var(--white);
     list-style: none;
     font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .qeyd{
+        width: 400px;
+        margin-left: -500px;
+    }
+}
+
+/* For screens up to 480px wide */
+@media (max-width: 480px) {
+    .qeyd {
+        width: 300px;
+        margin-left: -845px;
+    }
+
+    .image-container{
+        font-size: 15px;
+        margin-left: -35px;
+    }
 }
