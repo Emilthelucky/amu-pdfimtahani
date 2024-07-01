@@ -6,7 +6,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'https://exam-api-v2.vercel.app',
+                target: 'https://amu-exam-api-v2.onrender.com',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ''),
             },
