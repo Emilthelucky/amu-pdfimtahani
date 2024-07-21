@@ -40,7 +40,7 @@ export default defineConfig({
         port: 3000,
         proxy: {
             '/api': {
-                target: 'https://amu-exam-api-v2.onrender.com',
+                target: 'https://exam-api-v2.vercel.app/',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ''),
             },
