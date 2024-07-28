@@ -40,7 +40,7 @@ export default defineConfig({
         port: 3000,
         proxy: {
             '/api': {
-                target: 'https://examapi-v2-production.up.railway.app/',
+                target: 'https://examapi-v2-production.up.railway.app',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ''),
             },
